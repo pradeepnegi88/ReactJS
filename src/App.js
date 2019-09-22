@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Greet from './components/Greet';
+import Welcome from './components/Welcome'
 import './App.css';
 
 class App extends React.Component {
@@ -9,7 +10,8 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Greet/>
+          <Greet name="Pradeep Negi"/>
+          <Welcome />
          </header>
       </div>
     );
