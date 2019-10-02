@@ -15,6 +15,7 @@ this.setState({
     onSubmit = (event)=>{
         let value = this.state.userName
 alert(value)
+ event.preventDefault() // reatin the value after alret is clicked ok
     }
     render(){
         return(
