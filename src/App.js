@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome'
+import Counter from './components/Counter'
+
 import './App.css';
 
 class App extends React.Component {
@@ -12,6 +14,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Greet name="Pradeep Negi"/>
           <Welcome />
+          <Counter/>
          </header>
       </div>
     );
