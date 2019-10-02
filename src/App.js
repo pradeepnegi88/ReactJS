@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome'
 import Counter from './components/Counter'
+import Forms from './components/Forms'
 
 import './App.css';
 
@@ -11,10 +12,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <Forms/>
+          {/* <img src={logo} className="App-logo" alt="logo" />
           <Greet name="Pradeep Negi"/>
           <Welcome />
-          <Counter/>
+          <Counter/> */}
          </header>
       </div>
     );
