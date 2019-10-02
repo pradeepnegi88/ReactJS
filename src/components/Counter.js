@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonComponent from './ButtonComponent'
 
 class Counter extends React.Component{
     constructor(){
@@ -12,7 +13,7 @@ class Counter extends React.Component{
           count:prevState.count+1
       }))
     } 
-    incrementByFive(){
+    incrementByFive = ()=>{
         this.click()
         this.click()
         this.click()
@@ -22,7 +23,7 @@ class Counter extends React.Component{
     render(){
 return(<div>
 <h5>  Counter: {this.state.count} </h5>
-<button onClick={()=>this.incrementByFive()}>Click</button>
+<ButtonComponent byFive = {this.incrementByFive}/>
 </div>);
     }
 }
